@@ -19,5 +19,6 @@ from django.urls import path,include
 
 urlpatterns = [
     path('', include('pages.urls')),  # Include the URLs from the pages app
+    path('listings/', include('listings.urls')),  # Include the URLs from the listings app
     path('admin/', admin.site.urls),  # Admin site URL
 ]
